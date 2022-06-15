@@ -1,0 +1,182 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		DA490FF728332F6200635359 /* SendKeyStrokePeriodicallyToVerizonClient */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DA490FF828332F6200635359 /* Build configuration list for PBXAggregateTarget "SendKeyStrokePeriodicallyToVerizonClient" */;
+			buildPhases = (
+				DA490FFB28332F7700635359 /* CopyFiles */,
+				DA4910072833397B00635359 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = SendKeyStrokePeriodicallyToVerizonClient;
+			productName = SendKeyStrokePeriodicallyToVerizonClient;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		DA490FFF2833330400635359 /* SendKeyStrokeToVerizonClient.scpt in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA490FFC28332FF100635359 /* SendKeyStrokeToVerizonClient.scpt */; };
+		DA4910002833330900635359 /* com.send-keystroke-periodically-to-verizon-client.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA490FF5283328B600635359 /* com.send-keystroke-periodically-to-verizon-client.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA490FFB28332F7700635359 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				DA4910002833330900635359 /* com.send-keystroke-periodically-to-verizon-client.plist in CopyFiles */,
+				DA490FFF2833330400635359 /* SendKeyStrokeToVerizonClient.scpt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DA490FF5283328B600635359 /* com.send-keystroke-periodically-to-verizon-client.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "com.send-keystroke-periodically-to-verizon-client.plist"; sourceTree = "<group>"; };
+		DA490FFC28332FF100635359 /* SendKeyStrokeToVerizonClient.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = SendKeyStrokeToVerizonClient.scpt; sourceTree = "<group>"; };
+		DA490FFD2833313B00635359 /* makePackage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = makePackage.sh; sourceTree = "<group>"; };
+		DA490FFE2833323100635359 /* distribution.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = distribution.xml; sourceTree = "<group>"; };
+		DA4910022833334D00635359 /* postinstall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
+		DA4910032833334D00635359 /* preinstall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = preinstall; sourceTree = "<group>"; };
+		DA49100828333EB600635359 /* Uninstall_Send_KeyCodePeriodically.tool */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Uninstall_Send_KeyCodePeriodically.tool; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		DA490FEE2833285200635359 = {
+			isa = PBXGroup;
+			children = (
+				DA49100828333EB600635359 /* Uninstall_Send_KeyCodePeriodically.tool */,
+				DA491006283337CA00635359 /* PackageScripts */,
+				DA490FFE2833323100635359 /* distribution.xml */,
+				DA490FFD2833313B00635359 /* makePackage.sh */,
+				DA490FFC28332FF100635359 /* SendKeyStrokeToVerizonClient.scpt */,
+				DA490FF5283328B600635359 /* com.send-keystroke-periodically-to-verizon-client.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		DA491006283337CA00635359 /* PackageScripts */ = {
+			isa = PBXGroup;
+			children = (
+				DA4910032833334D00635359 /* preinstall */,
+				DA4910022833334D00635359 /* postinstall */,
+			);
+			path = PackageScripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		DA490FEF2833285200635359 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					DA490FF728332F6200635359 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DA490FF22833285200635359 /* Build configuration list for PBXProject "KeyStrokePeriodically" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA490FEE2833285200635359;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA490FF728332F6200635359 /* SendKeyStrokePeriodicallyToVerizonClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA4910072833397B00635359 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./makePackage.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DA490FF32833285200635359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DA490FF42833285200635359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		DA490FF928332F6200635359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA490FFA28332F6200635359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA490FF22833285200635359 /* Build configuration list for PBXProject "KeyStrokePeriodically" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA490FF32833285200635359 /* Debug */,
+				DA490FF42833285200635359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA490FF828332F6200635359 /* Build configuration list for PBXAggregateTarget "SendKeyStrokePeriodicallyToVerizonClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA490FF928332F6200635359 /* Debug */,
+				DA490FFA28332F6200635359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA490FEF2833285200635359 /* Project object */;
+}

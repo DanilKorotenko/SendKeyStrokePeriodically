@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-gui-script minSpecVersion="1">
+    <allowed-os-versions>
+        <os-version min="10.15" />
+    </allowed-os-versions>
+    <title>Send Keystroke Periodically to Verizon Client</title>
+    <organization>com.danilkorotenko</organization>
+    <options customize="never" require-scripts="true" rootVolumeOnly="true" hostArchitectures="x86_64,arm64" />
+    <!-- Define documents displayed at various steps -->
+<!--    <license    file="EULA.rtf"    mime-type="text/html" />-->
+    <!-- List all component packages -->
+    <pkg-ref id="com.danilkorotenko.SendKeyStrokePeriodically"
+             version="0"
+             auth="root">package.pkg</pkg-ref>
+
+    <!-- List them again here. They can now be organized
+         as a hierarchy if you want. -->
+    <choices-outline>
+        <line choice="com.danilkorotenko.SendKeyStrokePeriodically"/>
+    </choices-outline>
+    <!-- Define each choice above -->
+    <choice
+        id="com.danilkorotenko.SendKeyStrokePeriodically"
+        visible="false"
+        title="SendKeyStrokePeriodically"
+        description="SendKeyStrokePeriodically"
+        start_selected="true">
+      <pkg-ref id="com.danilkorotenko.SendKeyStrokePeriodically"/>
+    </choice>
+</installer-gui-script>
